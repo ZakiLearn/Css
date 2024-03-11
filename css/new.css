@@ -1,0 +1,190 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+header.navbar {
+  width: 100%;
+  max-width: 3000px;
+  padding-block: 1rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+  background-color: white;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+header.navbar .container img {
+  height: 150px;
+}
+
+header.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  padding-left: 0;
+  justify-content: center;
+}
+
+header.navbar a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  border: 1px transparent;
+}
+
+header.navbar a:hover {
+  text-shadow: 1px 0;
+}
+
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+main .card {
+  box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2);
+  padding-inline: 10px;
+  padding-block: 5px;
+
+  display: flex;
+  flex-direction: column;
+  margin-block: 20px;
+}
+
+main .card button {
+  max-width: 150px;
+  margin-inline: auto;
+  margin-block: 5px;
+  padding: 3px;
+  border: 3px solid transparent;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+}
+
+main .card button:hover {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  border: 3px solid black;
+  padding: 3px;
+  font-size: 15px;
+
+  transition: all 0.2s ease-in;
+}
+
+main .card h1 {
+  font-size: 32px;
+  padding-left: 10px;
+}
+
+main .card p {
+  margin-block: 0;
+  text-indent: 50px;
+}
+
+footer.footer {
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  justify-content: center;
+  align-self: flex-end;
+  position: fixed;
+}
+
+footer.footer p {
+  font-size: 15px;
+  color: white;
+}
+
+footer.footer p:before {
+  content: "@";
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-start: 0;
+  box-shadow: 17px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-width: 250px;
+}
+
+/* kotak menu aside */
+
+main aside {
+  display: none;
+}
+
+main aside .p {
+  flex-grow: 2;
+}
+
+main aside .kotak {
+  flex-grow: 0;
+  padding-inline: auto;
+  margin-inline: auto;
+}
+
+main aside .kotak .menu {
+  font-size: 20px;
+}
+
+main aside .kotak .menu:hover {
+  text-shadow: 1px 1px 0 #c7c7c7;
+}
+
+main aside .side {
+  flex-grow: 4.5;
+}
+
+main aside .side ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+main aside .side li {
+  min-width: 5px;
+}
+
+main aside .side a {
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+  font-weight: 300;
+  padding: 5px;
+  transition: all 0.5s ease-in;
+}
+
+main aside .side a:hover {
+  text-shadow: 1px 0;
+  transition: all 0.5s ease-out;
+}
+
+main .none {
+  bottom: 0;
+  min-height: 100px;
+}
